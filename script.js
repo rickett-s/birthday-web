@@ -1,9 +1,8 @@
 let particleInterval;
 
-// 这里是信纸的标题和正文内容，你可以随时编辑
 const birthdayMessage = {
-    title: "Dear rita,",
-    text: "Happy Birthday! May your day be filled with joy and sunshine."
+    title: "亲爱的朋友，",
+    text: "祝你生日快乐，愿你的每一天都充满阳光和幸福！"
 };
 
 function displayMessage() {
@@ -19,7 +18,6 @@ function openLetter() {
     envelope.classList.add('open');
     setTimeout(() => {
         modal.classList.add('open');
-        // 将 displayMessage() 函数的调用提前，确保信纸内容立即显示
         displayMessage();
         song.play();
         song.loop = true;
